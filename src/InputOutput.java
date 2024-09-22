@@ -34,11 +34,9 @@ public class InputOutput {
         try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             String line;
 
-            // Skip the first two lines (which are polynomials)
             reader.readLine();
             reader.readLine();
 
-            // Read the remaining lines as commands
             while ((line = reader.readLine()) != null) {
                 commands.add(line.trim());
             }
